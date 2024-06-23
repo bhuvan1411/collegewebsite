@@ -1,0 +1,151 @@
+HTML FILE
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSITY DESIGN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img class="ll" src="images/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#courses">COURSES</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="textbox">
+            <h1>YENEPOYA INSTITUTE OF TECHNOLOGY</h1>
+            <p>NBA-Accredited : B.E (CSE & ME)<br>
+            (Approved by AICTE, New Delhi, Affiliated to Visvesvaraya Technological University, Belgavi)</p>
+            <a href="#contact" class="btn">VISIT US TO KNOW MORE</a>
+        </div>
+    </section>
+
+    <!---------------COURSE------------------------------>
+    <section class="course" id="courses">
+        <h1>COURSES WE OFFER</h1>
+        <p>Explore our wide range of courses designed to help you excel in your chosen field.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Computer Science and Engineering</h3>
+                <p>Learn the fundamentals of computer science and develop the skills needed to excel in the tech industry.</p>
+            </div>
+            <div class="course-col">
+                <h3>Artificial Intelligence and Machine Learning</h3>
+                <p>Dive into the world of AI, machine learning, and data science to create intelligent systems.</p>
+            </div>
+            <div class="course-col">
+                <h3>CSE (IoT, Cyber Security including Blockchain Technology)</h3>
+                <p>Explore advanced topics in computer science, including IoT, cybersecurity, and blockchain technology.</p>
+            </div>
+            <div class="course-col">
+                <h3>Electrical and Electronics Engineering</h3>
+                <p>Understand the principles of electrical and electronics engineering and apply them to real-world projects.</p>
+            </div>
+            <div class="course-col">
+                <h3>Electronics and Communication Engineering</h3>
+                <p>Focus on the design and development of electronic circuits and communication systems.</p>
+            </div>
+            <div class="course-col">
+                <h3>Information Science and Engineering</h3>
+                <p>Study the processing, management, and communication of information and data.</p>
+            </div>
+            <div class="course-col">
+                <h3>Mechanical Engineering</h3>
+                <p>Learn about the design, analysis, and manufacturing of mechanical systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-----------------------CAMPUS-------------------->
+    <section class="campus" id="campus">
+        <h1>OUR YENEPOYA GROUP</h1>
+        <p>Experience our vibrant campuses located in other cities.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/university.jpg" alt="Yenepoya University">
+                <div class="layer">
+                    <h3>Yenepoya University</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/dentalcollege.jpeg" alt="Yenepoya Dental College">
+                <div class="layer">
+                    <h3>Yenepoya Dental College</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/school.jpeg" alt="Yenepoya School">
+                <div class="layer">
+                    <h3>Yenepoya School</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----------------------FACILITIES-------------------->
+    <section class="facilities" id="facilities">
+        <h1>Our Facilities</h1>
+        <p>We provide state-of-the-art facilities to support your learning and development.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/footballcourt.jpeg" alt="Football Court">
+                <h3>Football Court</h3>
+            </div>
+            <div class="facilities-col">
+                <img src="images/library.jpeg" alt="Library">
+                <h3>Library</h3>
+            </div>
+            <div class="facilities-col">
+                <img src="images/chemistry_inner.jpg" alt="Laboratory">
+                <h3>Laboratory</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-----------------CONTACT--------------------->
+    <section class="contact" id="contact">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you. Reach out to us using the following contact details.</p>
+        <div class="row">
+            <div class="contact-col">
+                <h3>Address</h3>
+                <p>N.H.13, Thodar,<br>Vidyanagar, Moodabidri,<br>Mangalore, Karnataka - 574225</p>
+            </div>
+            <div class="contact-col">
+                <h3>Phone</h3>
+                <p>08258 262733, 262713<br>
+                    7349640850, 9686155557</p>
+            </div>
+            <div class="contact-col">
+                <h3>Email</h3>
+                <p>principal@yit.edu.in</p>
+            </div>
+        </div>
+    </section>
+
+    <!-----------------JS FOR TOGGLE MENU--------------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
